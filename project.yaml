@@ -1,0 +1,83 @@
+basic:
+    name: 'https://fietsambassade.gent.be'
+    environments:
+        production: 'https://fietsambassade.gent.be'
+        staging: 'https://fietsambassade.qa.gent.be'
+        development: ''
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - /en
+        - /en/rent-bike
+        - /en/taxonomy/term/6
+        - /en/bicycle-parking
+        - /en/bike-lost
+        - /en/rent/where-to-find-us
+        - /en/contact-opening-hours
+        - /en/node/257
+        - /nl
+        - /en/locations
+        - /nl/huren/ontdek-onze-fietsen
+        - /en/rent-bike/discover-reserve-our-bikes
+        - /en/rent-bike/borrow-buggy-or-wheelchair
+        - /en/rent-bike/reserve-your-student-bike-or-extend-your-contract
+        - /nl/herstel-en-onderhoud
+        - /nl/herstel-en-onderhoud/student-gent
+        - /nl/herstel-en-onderhoud/bedrijven-en-organisaties
+        - /en/repair-and-maintenance/maintenance-students
+        - /nl/herstel-en-onderhoud/herstel-op-fietspunten
+        - /en/repair-and-maintenance/maintenance-and-repairs-staff
+        - /en/repair-and-maintenance/maintenance-and-repair-companies
+        - /en/repair-and-maintenance/maintenance-rental-bikes-individuals
+        - /nl/herstel-en-onderhoud/fietsherstel-op-locatie
+        - /en/news-and-events/ride-ghent-inside-out
+        - /en/news-and-events/artist-behind-murals-bike-point-onder-de-krook
+        - /en/news-and-events/reserve-your-student-bike-now
+        - /en/news-and-events/ride-gentse-fietsen-route
+        - /en/news-and-events
+        - /en/node/269
+        - /en/contact-opening-hours/contact-form
+        - /en/node/2
+        - /en/privacy-declaration
+        - /en/node/4
+        - /nl/huren/waar-vind-je-ons
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/Brussels
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: '#SG-CookieConsent'
+    delay: 0
+    scroll: false
+    headers:
+        - { value: '', header: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: false
